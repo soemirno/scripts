@@ -27,6 +27,8 @@ public class InsertHashScriptBuilder {
             writer.write("\');");
             writer.newLine();
         }
+        reader.close();
+        writer.close();
     }
 
     private static String createHash(String row) throws NoSuchAlgorithmException {
